@@ -15,10 +15,10 @@ public class ToDo extends Task {
     }
 
     /**
-     * Returns the string representation of the task.
-     * It takes the form of [type][done status][details].
+     * Returns the string representation of the to do object.
+     * It takes the form of [type][done status][title].
      *
-     * @return string representation of the task.
+     * @return string representation of the to do object.
      */
     @Override
     public String toString() {
@@ -26,9 +26,9 @@ public class ToDo extends Task {
     }
 
     /**
-     * Returns the data summary of this task to record this task in the database.
+     * Returns the data summary of this task to record this to do object in the database.
      *
-     * @return the data summary of this task.
+     * @return the data summary of this to do object.
      */
 
     public String getSummaryForDatabase() {

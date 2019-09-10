@@ -19,10 +19,10 @@ public class Deadline extends Task {
     }
 
     /**
-     * Returns the string representation of the task.
-     * It takes the form of [type][done status][details].
+     * Returns the string representation of the Deadline object.
+     * It takes the form of [type][done status][date][deadline].
      *
-     * @return string representation of the task.
+     * @return string representation of the Deadline object.
      */
     @Override
     public String toString() {
@@ -30,9 +30,9 @@ public class Deadline extends Task {
     }
 
     /**
-     * Returns the data summary of this task to record this task in the database.
+     * Returns the data summary of this task to record this Deadline object in the database.
      *
-     * @return the data summary of this task.
+     * @return the data summary of this Deadline object.
      */
     public String getSummaryForDatabase() {
         int status = isDone ? 1 : 0;

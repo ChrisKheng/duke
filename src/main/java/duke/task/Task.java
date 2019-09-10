@@ -10,6 +10,10 @@ public abstract class Task {
     protected boolean isDone;
     protected String status; // a unicode symbol representing the isDone status of the task (either a tick or a cross).
 
+    public enum TaskType {
+        TODO, DEADLINE, EVENT;
+    }
+
     /**
      * Constructs a task object.
      *
